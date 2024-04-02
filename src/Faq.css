@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+}
+.faqItem{
+    width: 800px;
+    margin: 0 auto;
+  }
+  .faqContainer{
+    margin-top:15px;
+    border: 1px solid;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .faqQuestion h5{
+    padding: 10px;
+    background-color: #8886;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+  }
+  .faqQuestion h5:hover{
+    background-color: #e0e0e0;
+  }
+  .faqContent{
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+  }
+  .faqAnswer{ 
+    font-size: 15px;
+    color: #555;
+  }
+  .faqContainer.active  .faqContent{
+    max-height: 300px;
+  }
+  
+  .faqAnswer{
+    padding: 10px;
+  
+  }
